@@ -1,7 +1,7 @@
 import Vue from "vue";
 import router from "./router";
 
-import app from "./views/App.vue";
+import App from "./views/App.vue";
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -39,7 +39,7 @@ require("./bootstrap");
 const app = new Vue({
     el: "#app",
     components: {
-        app,
+        App,
     },
     router,
 });

@@ -15,9 +15,9 @@ use App\Http\Controllers\SpaController;
 |
 */
 
-// Route::get('/', function () {
-//     print('hello');
+Route::get('/api/f', function () {
+    print('hello');
     // return view('welcome');
-// });
+});
 
 Route::get('{any}', [SpaController::class, 'index'])->where('any', '.*');
